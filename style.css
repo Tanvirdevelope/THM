@@ -1,0 +1,228 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header{
+    height: 100vh;
+}
+.row{
+    width: 100%;
+}
+.row::after{
+    clear: both;
+    content: '';
+    display: block;
+}
+[class*="col-"]{
+    width: 100%;
+}
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+/* header starts */
+header{
+    background-image: url(img/Home.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0% 1%;
+    text-align: center;
+}
+
+header img{
+    width: 180px;
+    height: auto ;
+    line-height: 70px;
+    text-align: center;
+    margin: 40px;
+}
+nav ul li a{
+    display: block;
+    text-decoration:none;
+    color: white;
+    line-height: 70px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: .4s;
+
+}
+nav ul li a:hover{
+    border-radius: 10px;
+    background-color: bisque;
+    color: black;
+}
+nav ul li{
+    display: block;
+}
+/* header ends */
+
+main{
+    background-image: url(img/main.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: auto;
+    
+
+}
+.about-section{
+    max-width: 1000px;
+    padding-top: 120px;
+    text-align: justify;
+    margin: auto;
+}
+.about-section h1{
+    width: 100%;
+    color: #935e24;
+    margin: auto;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.about-section p{
+    padding-top: 20px;
+    font-size: 1rem;
+}
+.section-center{
+    max-width: 1000px;
+    padding-top: 120px;
+    text-align: justify;
+    margin: auto; 
+}
+.section-center h2{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+#services{
+    padding: 5rem 1rem;
+}
+.blog-post-heading{
+    margin-bottom: 1rem;
+}
+.blog-post{
+    width: 70%;  
+    display: flex;
+    margin: 1rem 0;
+}
+.blog-post-aside{
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-right: 20px;
+    
+}
+.blog-content{
+    flex: 2;
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem;
+    margin-right: 250px;
+
+}
+article.artical-blog{
+    margin-top: 60px;
+}
+
+.blog-content p{
+    font-size: 14px;
+}
+.fa-box{
+    color: #935e24;
+    padding-right: 10px;
+}
+.project{
+    flex: 1;
+    display: flex;
+    margin-top: 100px;
+}
+.project-img{
+    padding: 15px;
+    width: 350px;
+    min-height: auto;
+}
+.project-content{
+    margin-left: 50px;
+}
+.project-content h3{
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.project-content p{
+    padding: 10px;
+}
+@media (min-width: 576px) {
+    .col-sm-1 { width: 8.33%;  }
+    .col-sm-3 { width: 25%;    }
+    .col-sm-4 { width: 33.33%; }
+    .col-sm-5 { width: 41.66%; }
+    .col-sm-6 { width: 50%;    }
+    .col-sm-7 { width: 58.33%; }
+    .col-sm-8 { width: 66%;    }
+    .col-sm-9 { width: 75%;     }
+    .col-sm-10 { width: 83.33%;  }
+    .col-sm-11 { width: 91.66%;  }
+    .col-sm-12 { width: 100%;    }
+}
+
+@media (min-width: 768px) {
+    .col-md-1 { width: 8.33%;  }
+    .col-md-3 { width: 25%;    }
+    .col-md-4 { width: 33.33%; }
+    .col-md-5 { width: 41.66%; }
+    .col-md-6 { width: 50%;    }
+    .col-md-7 { width: 58.33%; }
+    .col-md-8 { width: 66%;    }
+    .col-md-9 { width: 75%;     }
+    .col-md-10 { width: 83.33%;  }
+    .col-md-11 { width: 91.66%;  }
+    .col-md-12 { width: 100%;    }
+}
+
+
+@media (min-width: 992px) {
+    .logo-div{
+        text-align: left;
+    }
+    nav ul{
+        padding-top: 50px;
+        text-align: right;
+    }
+    nav ul li{
+        display: inline-block;
+    }
+    nav ul li a{
+        display: inline-block;
+    }
+    .col-lg-1 { width: 8.33%;  }
+    .col-lg-3 { width: 25%;    }
+    .col-lg-4 { width: 33.33%; }
+    .col-lg-5 { width: 41.66%; }
+    .col-lg-6 { width: 50%;    }
+    .col-lg-7 { width: 58.33%; }
+    .col-lg-8 { width: 66%;    }
+    .col-lg-9 { width: 75%;     }
+    .col-lg-10 { width: 83.33%;  }
+    .col-lg-11 { width: 91.66%;  }
+    .col-lg-12 { width: 100%;    }
+}
